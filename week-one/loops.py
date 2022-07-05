@@ -1,23 +1,22 @@
 # # Program to find the sum of all numbers stored in a list
 
 # # List of numbers
-# numbers = [6, 5, 3, 8, 4, 2, 5, 4, 11]
+numbers = [6, 5, 3, 8, 4, 2, 5, 4, 11]
 
 # # variable to store the sum
-# sum = 0
+sum = 0
 
 # # iterate over the list
-# for val in numbers:
-#     sum = sum+val
+for val in numbers:
+    sum = sum+val
 
-# print("The sum is", sum)
-# print(range(10)) #range(0, 10)
-# print(list(range(10))) #[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-# print(list(range(2, 8))) #[2, 3, 4, 5, 6, 7]
-# print(list(range(2, 20, 3))) #[2, 5, 8, 11, 14, 17]
+print("The sum is", sum)
+print(range(10)) #range(0, 10)
+print(list(range(10))) #[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(list(range(2, 8))) #[2, 3, 4, 5, 6, 7]
+print(list(range(2, 20, 3))) #[2, 5, 8, 11, 14, 17]
 
 # program to iterate through a list using index
-from unicodedata import digit
 
 
 animals = ['gorilla', 'fish', 'goat', 'dog']
@@ -43,3 +42,11 @@ for i in marks:
         break
 else:
     print('Not found in the list')
+
+
+# multiplication table of 10
+number = int(input("Enter an integer: "))
+
+for count in range(1, 11):
+    product = number * count
+    print(number, 'x', count, '=', product )
